@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.slider{
+    width: 800px;
+    height: 400px;
+
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.menu{
+    display: none;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+}
+
+.itens{
+    list-style: none;
+    display: flex;
+}
+
+.itens li{
+    padding: 0 60px 0 0;
+}
+
+.search-box{
+    margin-top: -2.5px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: .5s;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.search-box.ativar{
+    width: 280px;
+}
+
+.search-box .lupa, .search-box .btn-fechar{
+    min-width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-box .lupa {
+    margin-left: 15px;
+}
+
+.search-box .btn-fechar{
+    margin: 0 15px 0 3px;
+}
+
+
+.search-box .lupa i{
+    font-size: 20px;
+}
+
+.search-box .btn-fechar i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.search-box .input{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 120px);
+    line-height: 25px;
+}
+
+.search-box .input input{
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+}
+
+.cart{
+    min-width: 25px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.cart i{
+    font-size: 30px;
+}
