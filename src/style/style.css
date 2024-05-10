@@ -153,7 +153,7 @@ header{
 }
 
 .search-box .lupa {
-    margin-left: 15px;
+    margin-left: 14px;
 }
 
 .search-box .btn-fechar{
@@ -259,4 +259,13 @@ header{
 
 }
 
+.images-container{
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
 
+.image-container{
+    padding: 0 40px;
+}
