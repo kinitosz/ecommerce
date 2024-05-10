@@ -5,9 +5,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+header{
+    max-width: 100vw;
+}
+
 .slider{
     width: 100vw;
-    height: 700px;
+    height: 100vh;
     z-index: -1;
     margin: 0 auto;
     overflow: hidden;
@@ -16,7 +24,7 @@
 
 .slides{
     width: 400%;
-    height: 700px;
+    height: 100vh;
     display: flex;
 }
 
@@ -27,6 +35,7 @@
 .slide{
     width: 25%;
     position: relative;
+    transition: 1s;
 }
 
 .slide img{
@@ -39,6 +48,7 @@
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .manual-btn{
@@ -73,10 +83,36 @@
     border: 2px solid #20a6ff;
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+.navigation-auto{
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    margin-top: 739px;
+    display: flex;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
 }
 
 .menu{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 40px 10px 40px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -86,24 +122,6 @@
 #logo{
     width: 40px;
     height: 40px;
-}
-
-.navbar{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    align-items: center;
-}
-
-.itens{
-    list-style: none;
-    display: flex;
-    color: white;
-    font-weight: 400;
-}
-
-.itens li{
-    padding: 0 60px 0 0;
 }
 
 .search-box{
@@ -116,9 +134,10 @@
     align-items: center;
     position: relative;
     transition: .5s;
-    border: 1px solid white;
+    border: 2px solid transparent;
     border-radius: 10px;
-    background-color: #00000057;
+    background-color: #0000006b;
+    margin-right: 30px;
 }
 
 .search-box.ativar{
@@ -172,6 +191,54 @@
     color: #fff;
 }
 
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+}
+
+.itens, .usuario{
+    list-style: none;
+    display: flex;
+    color: white;
+    font-weight: 400;
+}
+
+.itens li{
+    margin-right: 40px;
+    padding: 10px;
+    transition: .2s;
+}
+
+.itens li:hover{  
+    border-radius: 10px;
+    background-color: #0000006b;
+    transform: scale(1.05);
+
+}
+
+.menu .btn-login i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    transition: .2s;
+    padding: 10px;
+}
+
+.btn-login:hover{
+    border-radius: 10px;
+    background-color: #0000006b;
+    transform: scale(1.05);
+
+}
+
 .cart{
     min-width: 25px;
     height: 25px;
@@ -184,3 +251,12 @@
 .cart i{
     font-size: 30px;
 }
+
+.conteudo{
+    position: absolute;
+    top: 100%;
+    width: 98.8vw;
+
+}
+
+
