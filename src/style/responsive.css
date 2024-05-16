@@ -6,6 +6,7 @@
     .text-container h1 {
         font-size: 2.5em;
     }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -30,6 +31,10 @@
 
     .navbar .itens {
         display: none;
+    }
+
+    .search-box{
+        background-color: transparent;
     }
 
     .btn-login {
@@ -153,7 +158,6 @@
         margin-top: -2.5px;
         width: 40px;
         height: 40px;
-        background-color: transparent;
     }
 
     .search-box.ativar {
