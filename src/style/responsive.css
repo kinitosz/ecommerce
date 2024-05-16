@@ -1,0 +1,102 @@
+@media screen and (max-width: 1250px) {
+    .text-container img{
+        width: 350px;       
+    }
+
+    .text-container h1{
+        font-size: 2.5em;       
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .text-containers .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 500px;
+    }
+
+    .text-container h1, .text-container p{
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .mobile-menu-btn{
+        display: flex;
+    }
+    
+    .navbar .itens{
+        display: none;
+    }
+
+    .btn-login{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: left;
+    }
+
+    #logo{
+        margin-right: 50px;
+    }
+
+    .mobile-nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .btn-login i{
+        font-size: 20px;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .mobile-nav .btn-login{
+        display: flex;
+        align-items: center;
+        transition: .2s;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-nav{
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: 2s;
+    }
+    .open{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        top: 67.5px;
+
+    }
+
+    .open li{
+        margin: 0;
+    }
+
+    .open li:hover{
+        transform: scale(1.1);
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .open .btn-login{
+        margin: 0 0 20px 0;
+
+    }
+
+    .open .btn-login ul{
+        padding: 0;
+        align-items: center;
+    }
+}
