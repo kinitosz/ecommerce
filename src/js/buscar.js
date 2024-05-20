@@ -2,6 +2,10 @@
 let boxBuscar = document.querySelector('.search-box');
 let lupa = document.querySelector('.lupa');
 let btnFechar = document.querySelector('.btn-fechar');
+let count = 1;
+document.getElementById("radio1").checked = true;
+const menuScroll = document.querySelector('.menu')
+
 
 lupa.addEventListener('click', ()=> {
     boxBuscar.classList.add('ativar')
@@ -10,9 +14,6 @@ lupa.addEventListener('click', ()=> {
 btnFechar.addEventListener('click', ()=> {
     boxBuscar.classList.remove('ativar')
 });
-
-let count = 1;
-document.getElementById("radio1").checked = true;
 
 setInterval( function(){
     nextImage();
@@ -37,3 +38,9 @@ function menuShow() {
     };
 
 }
+
+function activateScroll(){
+    menuScroll.classList.toggle('ativo', scrollY > 15);
+}
+
+window.addEventListener('scroll', activateScroll);
