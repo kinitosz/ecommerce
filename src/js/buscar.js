@@ -5,6 +5,14 @@ let btnFechar = document.querySelector('.btn-fechar');
 let count = 1;
 document.getElementById("radio1").checked = true;
 const menuScroll = document.querySelector('.menu')
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrossel(){
+    idx++;
+}
 
 
 lupa.addEventListener('click', ()=> {
