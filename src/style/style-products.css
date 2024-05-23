@@ -224,22 +224,44 @@ body{
 }
 
 .slider{
-    width: 1000px;
-    box-shadow: 2px 2px 4px;
+    margin: 137px 0 60px 0;
+    width: 100%;
+    display: flex;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .slides{
+    width: 1000px;
     display: flex;
-    transition: .5s ease-in-out;
-    transform: translateX();
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s;
 }
 
 .slides img{
-    object-fit: cover;
+    border-radius: 15px;
     width: 100%;
+    transition: .5s;
 }
 
+.on {
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button i, #next-button i{
+    font-size: 3em;
+}
 
 .products{
     background-color: #2c4408;

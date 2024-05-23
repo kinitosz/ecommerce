@@ -316,6 +316,8 @@ header{
     justify-content: center;
 }
 
+
+
 #radio1:checked ~ .navigation-auto .auto-btn1{
     background-color: #fff;
 }
@@ -325,6 +327,10 @@ header{
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio1{
     background-color: #fff;
 }
 
