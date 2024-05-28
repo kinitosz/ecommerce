@@ -1,4 +1,3 @@
-
 let boxBuscar = document.querySelector('.search-box');
 let lupa = document.querySelector('.lupa');
 let btnFechar = document.querySelector('.btn-fechar');
@@ -40,6 +39,7 @@ function prevSlider () {
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
 
+
 lupa.addEventListener('click', ()=> {
     boxBuscar.classList.add('ativar')
 });
@@ -47,22 +47,6 @@ lupa.addEventListener('click', ()=> {
 btnFechar.addEventListener('click', ()=> {
     boxBuscar.classList.remove('ativar')
 });
-
-document.getElementById("radio1").checked = true;
-
-setInterval( function(){
-    nextImage();
-}, 6000)
-
-function nextImage(){
-    count++;
-    if(count > 3){
-        count = 1;
-    }
-
-    document.getElementById("radio" + count).checked = true;
-
-}
 
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-nav');
