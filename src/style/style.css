@@ -358,6 +358,7 @@ header{
 }
 
 .products{
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     padding: 60px 0 40px 0;
@@ -372,7 +373,7 @@ header{
 }
 
 .products .product{
-    width: 300px;
+    width: 100%;
     transition: 0.5s;
 }
 
