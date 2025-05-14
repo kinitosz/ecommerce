@@ -1,0 +1,184 @@
+.mobile-nav {
+  display: none;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 880px) {
+
+  .menu {
+    height: 14vh;
+    box-shadow: none;
+  }
+
+
+  .navbar .itens {
+    display: none;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: left;
+  }
+
+  #logo {
+    margin-right: 50px;
+  }
+
+
+  .mobile-menu-btn {
+    display: flex;
+    min-width: 25px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    transition: .5s;
+    margin-left: 30px;
+    
+  }
+
+  .mobile-menu-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .mobile-menu-btn i {
+    font-size: 30px;
+  }
+
+  
+  .mobile-nav {
+    position: fixed;
+    top: 14vh;
+    right: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    animation: showLeft .5s;
+    transition: 0.6s;
+  }
+
+  .mobile-nav.scroll-ativo {
+    background-color: rgb(2, 2, 2);
+    
+
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+
+
+  .btn-login i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: white;
+  }
+
+
+
+  .mobile-nav .btn-login {
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+
+  .mobile-nav .cart {
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+
+  .cart i {
+    font-size: 25px;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-bottom: 20px;
+  }
+
+  .mobile-nav.open li {
+    margin: 0;
+  }
+
+  .mobile-nav.open li:hover,
+  .mobile-nav.open .btn-login:hover,
+  .mobile-nav.open .cart:hover {
+    transform: scale(1.1);
+    border: none;
+    background-color: transparent;
+  }
+
+  .mobile-nav.open .btn-login ul {
+    padding: 0;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu {
+    padding: 5px 20px 5px 20px;
+  }
+
+  #logo {
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+    margin-right: 20px;
+  }
+
+  .mobile-menu-btn {
+    margin: 0;
+  }
+
+  .mobile-menu-btn i {
+    font-size: 22px;
+  }
+
+  .mobile-nav li {
+    font-size: 15px;
+  }
+
+  .btn-login i {
+    font-size: 17px;
+  }
+
+  .cart i {
+    font-size: 22px;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 47.5px;
+    padding-bottom: 10px;
+  }
+
+}

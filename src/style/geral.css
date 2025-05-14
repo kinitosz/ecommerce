@@ -1,0 +1,55 @@
+/* Configurações Padrão */
+@charset "UTF-8";
+
+/* Cores */
+
+:root{
+    --bgColor: #1464bf;
+    --bgMenuColor1: #0000006b;
+    --bgMenuColor2: #ffffff2c;
+    --navwall1: url('../images/navwall1.png');
+    --navwall2: url('../images/navwall2.jpg');
+    --navwall3: url('../images/navwall3.jpg');
+    --navwall4: url('../images/navwall4.png');
+}
+
+/* Reset */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Animações */
+
+@keyframes showDown{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showLeft{
+  from {
+    transform: translate3d(100vw, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hideLeft{
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(100vw, 0, 0);
+  }
+}

@@ -1,34 +1,15 @@
-function searchBox(){
-    let boxBuscar = document.querySelector('.search-box');
-    let lupa = document.querySelector('.lupa');
-    let btnFechar = document.querySelector('.btn-fechar');
-  
-    lupa.addEventListener('click', ()=> {
-    boxBuscar.classList.add('ativar')
-    });
-  
-    btnFechar.addEventListener('click', ()=> {
-        boxBuscar.classList.remove('ativar')
-    });
-  }
-  searchBox()
-  
+import initFiltro from "./modules/filtro.js";
+import initSearchBox from "./modules/search-box.js";
+import initSlide from "./modules/slide.js";
+import initMenuScroll from "./modules/menu-scroll.js";
+import initSlideHome from "./modules/slide-home.js";
+import initMenuMobile from "./modules/menu-mobile.js";
+import initMenuMobileScroll from "./modules/menu-mobile-scroll.js";
 
-
-
-
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-nav');
-    menuMobile.classList.toggle('open')
-}
-
-function menuDinamicScroll(){
-    const menuScroll = document.querySelector('.menu');
-
-    function activateScroll(){
-        menuScroll.classList.toggle('ativo', scrollY > 15);
-    }
-
-    window.addEventListener('scroll', activateScroll);
-}
-menuDinamicScroll()
+initFiltro();
+initSearchBox();
+initSlide();
+initMenuScroll();
+initSlideHome();
+initMenuMobile();
+initMenuMobileScroll();

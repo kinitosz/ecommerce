@@ -11,23 +11,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./src/style/style.css">
-        <link rel="stylesheet" href="./src/style/home.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/home.css">
 </head>
 
 <body>
     <header>
-        <nav class="menu">
+
+        <nav data-menu class="menu">
             <img src="src/images/LOGO.svg" alt="Faça do Seu Jeito" id="logo">
             <div class="navbar">
-                <div class="search-box">
-                    <div class="lupa">
+                <div data-searchBox="box" class="search-box">
+                    <div data-searchBox="open" class="lupa">
                         <i class="bi bi-search"></i>
                     </div>
-                    <div class="input">
-                        <input type="text" name="" id="" placeholder="Faça sua pesquisa aqui">
-                    </div>
-                    <div class="btn-fechar">
+                    <input type="text" name="" id="" placeholder="Faça sua pesquisa aqui">
+                    <div data-searchBox="close" class="btn-fechar">
                         <i class="bi bi-x-circle"></i>
                     </div>
                 </div>
@@ -38,8 +37,6 @@
                     <li><a href="#">Quem Somos</a></li>
                 </ul>
             </div>
-
-
             <div class="btn-login">
                 <a href="#">
                     <i class="bi bi-person-fill"></i>
@@ -51,34 +48,35 @@
             <div class="cart">
                 <a href="https://www.youtube.com"><i class="bi bi-cart"></i></a>
             </div>
-
-            <div class="mobile-menu-btn">
-                <i onclick="menuShow()" class="bi bi-list"></i>
+            <div data-mobile="btn" class="mobile-menu-btn">
+                <i class="bi bi-list"></i>
             </div>
-
         </nav>
 
-        <div class="mobile-nav">
+
+
+        <div data-mobile="nav" class="mobile-nav">
             <ul class="itens">
                 <li><a href="./pages/products.html">Produtos</a></li>
                 <li><a href="#">Personalizar</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Quem Somos</a></li>
             </ul>
-                <div class="btn-login">
-                    <a href="#">
-                        <i class="bi bi-person-fill"></i>
-                        <ul class="usuario">
-                            <li>Login</li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="cart">
-                    <i class="bi bi-cart"></i>
-                </div>
+            <div class="btn-login">
+                <a href="#">
+                    <i class="bi bi-person-fill"></i>
+                    <ul class="usuario">
+                        <li>Login</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+            </div>
         </div>
 
-        <div class="slider">
+
+        <div data-slide="home" class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
@@ -109,14 +107,30 @@
 
     <main class="conteudo">
         <section class="products">
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
-            <a href="../pages/exibir.html"><div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div></a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
+            <a href="../pages/exibir.html">
+                <div class="box-product"><img class="product" src="../src/images/produtos.jpg" alt=""></div>
+            </a>
         </section>
         <section class="text-containers">
             <div class="text-container">
@@ -148,8 +162,7 @@
         </section>
     </footer>
 
-    <script src="./src/js/script.js"></script>
-    <script src="./src/js/home.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
 </body>
 
 </html>
